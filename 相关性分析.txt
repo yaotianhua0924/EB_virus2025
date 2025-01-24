@@ -1,0 +1,12 @@
+import pandas
+
+from spsspro.algorithm import descriptive_analysis
+#生成案例数据
+data = pandas.DataFrame({
+    "A": [1, 2, 3],
+    "B": [2, 3, 4]
+})
+#相关性分析，输入参数详细可以光标放置函数括号内按shift+tab查看，输出结果参考spsspro模板分析报告
+result = descriptive_analysis.correlation_analysis(data)
+print(result)
+    
